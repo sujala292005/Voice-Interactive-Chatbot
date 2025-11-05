@@ -1,48 +1,95 @@
-🧠 Voice-Interactive Chatbot
+# 🧠 Voice-Interactive Chatbot  
+A Python-based intelligent assistant that supports **voice commands, text chat, NLP-based responses, GUI interaction, a built-in maze game, calculator, and a Morse code translator** — all in one application.
 
-A Python-based intelligent chatbot with speech recognition, text-to-speech, NLP, GUI, and integrated mini-apps.
-🏆 Won 2nd Prize among 30 teams in college hackathon
+🏆 **Winner: 2nd Place out of 30 teams** in college hackathon.
 
-✅ Features
+---
 
-🎤 Speech Recognition (Google Voice API)
+## ✅ Features
 
-🔊 Text-to-Speech using pyttsx3
+### 🎤 Voice Recognition
+- Uses `SpeechRecognition` + Google STT  
+- Converts speech → text  
+- Handles timeouts & errors gracefully  
 
-💬 Rule-Based NLP Chatbot using NLTK
+### 🔊 Text-to-Speech (TTS)
+- Uses `pyttsx3`  
+- Smooth non-blocking speech output  
+- Implemented using **Threading + Queue**  
 
-🎮 Mini Apps Integration
+### 💬 NLP Chatbot (NLTK)
+- Rule-based chatbot using NLTK Chat pairs  
+- Regex-based intent detection  
+- Replies using both text & voice  
+- Handles greetings, queries, jokes, commands  
 
-Maze Runner Game
+### 🪟 GUI Interface (Tkinter)
+- Full chat interface  
+- Input box + send button + voice button  
+- Dynamic message rendering  
+- Popup windows for mini apps  
 
-Calculator
+### 🌐 Website Automation
+Voice commands can open:
+- Google  
+- YouTube  
+- ChatGPT  
+- Instagram  
+- Facebook  
+- Netflix  
+- Hotstar  
+- And more  
 
-Morse Code Translator
+Example:  
+**“open youtube” → launches YouTube automatically**
 
-🪟 Tkinter GUI
+---
 
-🔁 Multithreading for smooth TTS + GUI
+## 🎮 Mini Apps (Integrated)
 
-🌐 Website Automation (YouTube, Google, Insta, etc.)
+### 🟣 1. Maze Runner Game (Pygame)
+- Random maze generation  
+- Player movement with arrow keys  
+- Timer countdown  
+- Win/Lose message  
+- Collision detection  
 
-🛡️ Fallback Text Chat Mode
+### 🔢 2. Calculator
+- Tkinter-based calculator  
+- Real-time input  
+- Expression evaluation  
+- Clear function  
 
-✅ Tech Stack
+### 🔤 3. Morse Code Translator
+- Text → Morse code  
+- Morse → Text  
+- Tkinter GUI with input/output boxes  
+- Error handling included  
 
-Python 3
+---
 
-Tkinter (GUI)
+## ✅ Tech Stack
 
-SpeechRecognition
+### **Languages**
+- Python 3  
 
-Pyttsx3
+### **Libraries**
+- SpeechRecognition  
+- PyAudio  
+- pyttsx3  
+- nltk  
+- pygame  
+- tkinter (built-in)  
+- queue & threading (built-in)  
+- webbrowser (built-in)  
+- re, random, time, os (built-in)  
+- requests (if using weather API)  
 
-NLTK
+---
 
-Regex
+## ✅ How to Run
 
-Threading & Queues
-
-pygame
-
-webbrowser
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/sujala292005/Voice-Interactive-Chatbot
+cd Voice-Interactive-Chatbot
