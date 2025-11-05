@@ -1,0 +1,9 @@
+SpeechRecognition
+pyttsx3
+pyaudio
+pygame
+nltk
+Pillow
+requests
+python-dotenv
+

@@ -1,6 +1,0 @@
-speechrecognition
-pyttsx3
-pygame
-nltk
-pyaudio
-tk
